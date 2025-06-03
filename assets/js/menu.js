@@ -82,8 +82,8 @@ function generateMenuItemHTML(item, idx) {
       </a>
       <h4>${title}</h4>
       
-      <pee class="ingredients">${description}</p>
-      <pee class="price">${price}</p>
+      <p class="ingredients">${description}</p>
+      <p class="price">${price}</p>
       
     </div>
   `;
