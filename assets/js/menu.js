@@ -61,6 +61,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       menuTabsContainer.innerHTML = tabsHTML.join("");
       menuTabContent.innerHTML = tabContentsHTML.join("");
+       if (typeof mixpanel !== "undefined") {
+        mixpanel.track("Visited Menu Section", {
+          menuSectionsCount: sections.length,
+          timestamp: new Date().toISOString()
+        });
+      } else {
+        console.warn("📉 Mixpanel is not defined");
+      }
     }
   } catch (err) {
     console.error("❌ خطا در دریافت منو:", err.message);
