@@ -81,10 +81,10 @@ function generateMenuItemHTML(item, idx) {
         <img src="${finalUrl}" class="menu-img img-fluid" alt="${title}">
       </a>
       <h4>${title}</h4>
-      
+      <!--
       <p class="ingredients">${description}</p>
       <p class="price">${price}</p>
-      
+      -->
     </div>
   `;
 }
