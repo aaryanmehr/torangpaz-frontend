@@ -173,4 +173,19 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * ✅ Track page view with Mixpanel
+   */
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof mixpanel !== "undefined") {
+      mixpanel.track("Page Viewed", {
+        page: "Homepage",
+        url: window.location.href,
+        timestamp: new Date().toISOString()
+      });
+    } else {
+      console.warn("❌ Mixpanel is not defined.");
+    }
+  });
+
 })();
