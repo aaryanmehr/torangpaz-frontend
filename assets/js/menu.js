@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <div class="tab-pane fade ${tabContentsHTML.length === 0 ? "active show" : ""}" id="${categoryId}">
             <div class="tab-header text-center">
             
-              <h3>${categoryName}</h3>
+              <!-- <h3>${categoryName}</h3> -->
             </div>
             <div class="row gy-5">
               ${itemsHTML}

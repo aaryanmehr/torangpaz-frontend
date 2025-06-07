@@ -647,3 +647,105 @@ select,
     display: block;
   }
 }
+
+section#desktop-mockup a.btn.btn-outline-secondary {
+  border-color: #FF5857 !important;
+  color: #FF5857 !important;
+  transition: all 0.3s ease;
+}
+
+section#desktop-mockup a.btn.btn-outline-secondary:hover {
+  background-color: #FF5857 !important;
+  color: #fff !important;
+  border-color: #FF5857 !important;
+}
+
+.desktop-mockup-swiper {
+  position: relative;
+  padding-bottom: 40px; /* فضای زیر اسلایدر برای pagination */
+}
+
+.desktop-mockup-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* رنگ پیش‌فرض دات‌ها */
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+/* رنگ دات فعال */
+.swiper-pagination-bullet-active {
+  background-color: #FF5857;
+  opacity: 1;
+}
+
+
+/* رنگ برند */
+.text-brand {
+  color: #FF5857;
+}
+
+
+
+.feature-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* آیکن قرمز با رنگ سفید داخل دایره */
+.icon-box i {
+  background-color: #FF5857;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  transition: all 0.3s ease;
+  box-shadow: none; /* ❌ حذف shadow اضافی */
+}
+
+/* حذف باکس سفید اطراف آیکن */
+.feature-box {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  text-align: start;
+}
+
+/* وسط‌چینی عمودی آیکن و متن */
+.feature-item-fixed {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.feature-item-fixed:hover {
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+/* کنترل بهتر ارتفاع و ترازبندی در نمایشگر بزرگ */
+@media (min-width: 992px) {
+  #features-mobile .col-lg-4 {
+    min-height: 100%;
+  }
+}
+
+/* محدود کردن سایز تصویر موبایل (اختیاری) */
+.mobile-mockup {
+  max-height: 480px;
+  object-fit: contain;
+}
+
+/* اگر خواستی بین ستون‌ها فاصله بیشتر هم باشه */
+#features-mobile .row {
+  row-gap: 3rem;
+}
