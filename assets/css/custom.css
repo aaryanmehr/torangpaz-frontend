@@ -531,21 +531,6 @@ select,
   background-color: #ffffff !important;
 }
 
-/* عنوان اصلی */
-.mockup-section .section-title h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #FF5857;
-  margin-bottom: 8px;
-}
-
-/* زیر تیتر */
-.mockup-section .section-title p {
-  font-size: 16px;
-  color: #85898D;
-  margin-bottom: 24px;
-}
-
 /* باکس تصویر */
 .mockup-wrapper {
   display: flex;
